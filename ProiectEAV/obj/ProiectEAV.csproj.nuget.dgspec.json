@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ovidi\\source\\repos\\ProiectEAV\\ProiectEAV\\ProiectEAV.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ovidi\\source\\repos\\ProiectEAV\\ProiectEAV\\ProiectEAV.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ovidi\\source\\repos\\ProiectEAV\\ProiectEAV\\ProiectEAV.csproj",
+        "projectName": "ProiectEAV",
+        "projectPath": "C:\\Users\\ovidi\\source\\repos\\ProiectEAV\\ProiectEAV\\ProiectEAV.csproj",
+        "packagesPath": "C:\\Users\\ovidi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ovidi\\source\\repos\\ProiectEAV\\ProiectEAV\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ovidi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.Toolkit.Forms.UI.Controls.WebView": {
+              "target": "Package",
+              "version": "[6.1.2, )"
+            }
+          },
+          "imports": [
+            "uap10.0.18362"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

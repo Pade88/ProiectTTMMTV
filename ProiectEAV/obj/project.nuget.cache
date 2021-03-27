@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Pbls27KBTicCPWq7FppUGXAbeV1CODgbIXR+soccziOoTA1K03tRqTAQIUdYLWB4iih+kg9k4GPwzUc77wb9Tg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ovidi\\source\\repos\\ProiectEAV\\ProiectEAV\\ProiectEAV.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ovidi\\.nuget\\packages\\microsoft.toolkit.forms.ui.controls.webview\\6.1.2\\microsoft.toolkit.forms.ui.controls.webview.6.1.2.nupkg.sha512",
+    "C:\\Users\\ovidi\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.18362.2005\\microsoft.windows.sdk.contracts.10.0.18362.2005.nupkg.sha512",
+    "C:\\Users\\ovidi\\.nuget\\packages\\system.runtime.windowsruntime\\4.6.0\\system.runtime.windowsruntime.4.6.0.nupkg.sha512",
+    "C:\\Users\\ovidi\\.nuget\\packages\\system.runtime.windowsruntime.ui.xaml\\4.6.0\\system.runtime.windowsruntime.ui.xaml.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
