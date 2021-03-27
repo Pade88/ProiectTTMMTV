@@ -936,11 +936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ovidi\\source\\repos\\ProiectEAV\\ProiectEAV\\ProiectEAV.csproj",
-      "projectName": "ProiectEAV",
-      "projectPath": "C:\\Users\\ovidi\\source\\repos\\ProiectEAV\\ProiectEAV\\ProiectEAV.csproj",
+      "projectUniqueName": "C:\\Users\\ovidi\\source\\repos\\ProiectTTMMTV\\ProiectEAV\\ProiectTTMMTV.csproj",
+      "projectName": "ProiectTTMMTV",
+      "projectPath": "C:\\Users\\ovidi\\source\\repos\\ProiectTTMMTV\\ProiectEAV\\ProiectTTMMTV.csproj",
       "packagesPath": "C:\\Users\\ovidi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ovidi\\source\\repos\\ProiectEAV\\ProiectEAV\\obj\\",
+      "outputPath": "C:\\Users\\ovidi\\source\\repos\\ProiectTTMMTV\\ProiectEAV\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

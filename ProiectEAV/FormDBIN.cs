@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace ProiectEAV
 {
@@ -26,24 +27,26 @@ namespace ProiectEAV
                 textBox4.Text != "" &&
                 textBox5.Text != "")
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-CUHAUG6\SQLEXPRESS;" +
-                 "Initial Catalog=PostOficces;Integrated Security=SSPI;");
-                string querry = "INSERT INTO oficii_postale " +
-                    "(denumire, tip, adresa, cod_postal," +
-                    " mail) " +
-                    "values ('" + textBox1.Text +
-                    "', '" + textBox2.Text +
-                    "', '" + textBox3.Text +
-                    "', '" + textBox4.Text +
-                    "', '" + textBox5.Text + "');";
-                SqlCommand cmd = new SqlCommand(querry, conn);
-                conn.Open();
-                cmd.ExecuteReader();
-                conn.Close();
-                cmd.Dispose();
-                conn.Dispose();
-                this.Close();
+                var rand = new Random();
+                XDocument doc = XDocument.Load(@"..\..\records.xml");
+
+                XElement root = new XElement("OP");
+                root.Add(new XElement("id", rand.Next(100)));
+                root.Add(new XElement("denumire", textBox1.Text));
+                root.Add(new XElement("tip", textBox2.Text));
+                root.Add(new XElement("adresa", textBox2.Text));
+                root.Add(new XElement("cod_postal", textBox2.Text));
+                root.Add(new XElement("mail", textBox2.Text));
+                doc.Element("oficii_postale").Add(root);
+                doc.Save(@"..\..\records.xml");
+
             }
+            this.Close();
+        }
+
+        private void FormDBIN_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

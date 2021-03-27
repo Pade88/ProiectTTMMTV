@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProiectEAV", "ProiectEAV\ProiectEAV.csproj", "{9BEFA22F-BD88-4C46-9084-086836E1299F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProiectTTMMTV", "ProiectEAV\ProiectTTMMTV.csproj", "{9BEFA22F-BD88-4C46-9084-086836E1299F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

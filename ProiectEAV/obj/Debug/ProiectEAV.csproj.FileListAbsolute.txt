@@ -12,3 +12,17 @@ C:\Users\ovidi\source\repos\ProiectEAV\ProiectEAV\obj\Debug\ProiectEAV.csproj.Co
 C:\Users\ovidi\source\repos\ProiectEAV\ProiectEAV\obj\Debug\ProiectEAV.exe
 C:\Users\ovidi\source\repos\ProiectEAV\ProiectEAV\obj\Debug\ProiectEAV.pdb
 C:\Users\ovidi\source\repos\ProiectEAV\ProiectEAV\obj\Debug\ProiectEAV.FormDBIN.resources
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\bin\Debug\ProiectEAV.exe.config
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\bin\Debug\ProiectEAV.exe
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\bin\Debug\ProiectEAV.pdb
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\bin\Debug\Microsoft.Toolkit.Forms.UI.Controls.WebView.dll
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\bin\Debug\Microsoft.Toolkit.Forms.UI.Controls.WebView.pdb
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectEAV.csprojAssemblyReference.cache
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectEAV.Form1.resources
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectEAV.FormDBIN.resources
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectEAV.Properties.Resources.resources
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectEAV.csproj.GenerateResource.cache
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectEAV.csproj.CoreCompileInputs.cache
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectEAV.csproj.CopyComplete
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectEAV.exe
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectEAV.pdb
