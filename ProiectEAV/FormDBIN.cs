@@ -34,9 +34,9 @@ namespace ProiectEAV
                 root.Add(new XElement("id", rand.Next(100)));
                 root.Add(new XElement("denumire", textBox1.Text));
                 root.Add(new XElement("tip", textBox2.Text));
-                root.Add(new XElement("adresa", textBox2.Text));
-                root.Add(new XElement("cod_postal", textBox2.Text));
-                root.Add(new XElement("mail", textBox2.Text));
+                root.Add(new XElement("adresa", textBox3.Text));
+                root.Add(new XElement("cod_postal", textBox4.Text));
+                root.Add(new XElement("mail", textBox5.Text));
                 doc.Element("oficii_postale").Add(root);
                 doc.Save(@"..\..\records.xml");
 
