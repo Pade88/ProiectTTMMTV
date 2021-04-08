@@ -150,7 +150,6 @@ namespace ProiectEAV
             this.Controls.Add(this.label1);
             this.Name = "FormDBIN";
             this.Text = "FormDBIN";
-            this.Load += new System.EventHandler(this.FormDBIN_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

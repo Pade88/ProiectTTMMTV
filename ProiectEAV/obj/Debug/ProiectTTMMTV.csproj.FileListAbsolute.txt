@@ -12,3 +12,4 @@ C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\bin\Debug\Microsoft.Toolkit
 C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\bin\Debug\Microsoft.Toolkit.Forms.UI.Controls.WebView.pdb
 C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectTTMMTV.csproj.CopyComplete
 C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\obj\Debug\ProiectTTMMTV.csprojAssemblyReference.cache
+C:\Users\ovidi\source\repos\ProiectTTMMTV\ProiectEAV\bin\Debug\Newtonsoft.Json.dll

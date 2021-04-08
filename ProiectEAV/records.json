@@ -1,0 +1,102 @@
+{
+  "oficii_postale": {
+    "OP": [
+      {
+        "id": "1",
+        "denumire": "OJP Dolj",
+        "tip": "Oficiu Judetean de Posta",
+        "adresa": "Craiova, Str. Unirii, nr. 54",
+        "cod_postal": "200850",
+        "mail": "ojpdolj@email.com"
+      },
+      {
+        "id": "2",
+        "denumire": "Ghiseu Postal Craiova 7",
+        "tip": "Ghiseu Postal",
+        "adresa": "Craiova, B-dul Carol I, nr. 152A",
+        "cod_postal": "200920",
+        "mail": "craiova7@email.com"
+      },
+      {
+        "id": "3",
+        "denumire": "Ghiseu Postal Craiova 4",
+        "tip": "Ghiseu Postal",
+        "adresa": "Craiova, Calea Bucureşti, nr. 34, bl. A8, parter",
+        "cod_postal": "200890",
+        "mail": "craiova4@email.com"
+      },
+      {
+        "id": "4",
+        "denumire": "Ghiseu Postal Craiova 3",
+        "tip": "Ghiseu Postal",
+        "adresa": "Craiova, Calea Bucureşti, nr. 9, bl U1",
+        "cod_postal": "200880",
+        "mail": "craiova3@email.com"
+      },
+      {
+        "id": "5",
+        "denumire": "Oficiu Postal Craiova 2",
+        "tip": "Oficiu Postal",
+        "adresa": "Craiova, cart. Rovine, Str. N. Iorga, nr. 118, bl. A60",
+        "cod_postal": "200870",
+        "mail": "craiova2@email.com"
+      },
+      {
+        "id": "6",
+        "denumire": "Craiova 3 - Ghişeu 2",
+        "tip": "Ghiseu Postal",
+        "adresa": "Craiova, Curtea de Apel, Str. Constantin Brancusi, nr. 5A",
+        "cod_postal": "200886",
+        "mail": "craiova3g2@email.com"
+      },
+      {
+        "id": "7",
+        "denumire": "Craiova 8 - Ghişeu 1",
+        "tip": "Ghiseu Postal",
+        "adresa": "Craiova, Judecătorie, Str. Al. I. Cuza, nr. 20",
+        "cod_postal": "200950",
+        "mail": "craiova8g1@email.com"
+      },
+      {
+        "id": "8",
+        "denumire": "Craiova OPD",
+        "tip": "Oficiu Postal de Distribuire",
+        "adresa": "Craiova, Piata Constantin Brancusi, nr. 8",
+        "cod_postal": "200980",
+        "mail": "craiovaopd@gmail.com"
+      },
+      {
+        "id": "9",
+        "denumire": "Craiova OZP",
+        "tip": "Oficiul Zonal Postal",
+        "adresa": "Craiova, Piaţa Constantin Brâncuşi, nr. 8",
+        "cod_postal": "200990",
+        "mail": "craiovaozp@gmail.com"
+      },
+      {
+        "id": "10",
+        "denumire": "Oficiu Poştal Express Dolj",
+        "tip": "Oficiu Postal Express",
+        "adresa": "Craiova, Str. Piaţa Constantin Brâncuşi, nr. 8",
+        "cod_postal": "200800",
+        "mail": "oped@email.com"
+      },
+      {
+        "id": "11",
+        "denumire": "Oficiu Postal Central",
+        "tip": "Centru Postal",
+        "adresa": "Bucuresti, Sector 2, Soseaua Horia Macelariu 23-24",
+        "cod_postal": "200800",
+        "mail": "opcr@email.com"
+      },
+      {
+        "id": "73",
+        "denumire": "muz",
+        "tip": "muz",
+        "adresa": "muz",
+        "cod_postal": "muz",
+        "mail": "muz"
+      }
+    ]
+  }
+}

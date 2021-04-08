@@ -88,4 +88,12 @@
     <cod_postal>200800</cod_postal>
     <mail>opcr@email.com</mail>
   </OP>
+  <OP>
+    <id>4</id>
+    <denumire>ok</denumire>
+    <tip>ok</tip>
+    <adresa>ok</adresa>
+    <cod_postal>ok</cod_postal>
+    <mail>ok</mail>
+  </OP>
 </oficii_postale>

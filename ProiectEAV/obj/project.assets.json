@@ -121,6 +121,15 @@
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
         }
       },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
       "System.Runtime.WindowsRuntime/4.6.0": {
         "type": "package",
         "compile": {
@@ -267,6 +276,15 @@
         "build": {
           "build/Microsoft.Windows.SDK.Contracts.props": {},
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
       "System.Runtime.WindowsRuntime/4.6.0": {
@@ -417,6 +435,15 @@
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
         }
       },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
       "System.Runtime.WindowsRuntime/4.6.0": {
         "type": "package",
         "compile": {
@@ -563,6 +590,15 @@
         "build": {
           "build/Microsoft.Windows.SDK.Contracts.props": {},
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
       "System.Runtime.WindowsRuntime/4.6.0": {
@@ -783,6 +819,33 @@
         "ref/netstandard2.0/en/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.xml"
       ]
     },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "System.Runtime.WindowsRuntime/4.6.0": {
       "sha512": "IWrs1TmbxP65ZZjIglNyvDkFNoV5q2Pofg5WO7I8RKQOpLdFprQSh3xesOoClBqR4JHr4nEB1Xk1MqLPW1jPuQ==",
       "type": "package",
@@ -926,12 +989,13 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "Microsoft.Toolkit.Forms.UI.Controls.WebView >= 6.1.2"
+      "Microsoft.Toolkit.Forms.UI.Controls.WebView >= 6.1.2",
+      "Newtonsoft.Json >= 13.0.1"
     ]
   },
   "packageFolders": {
     "C:\\Users\\ovidi\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -944,7 +1008,7 @@
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\ovidi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -970,6 +1034,10 @@
           "Microsoft.Toolkit.Forms.UI.Controls.WebView": {
             "target": "Package",
             "version": "[6.1.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
           }
         },
         "imports": [

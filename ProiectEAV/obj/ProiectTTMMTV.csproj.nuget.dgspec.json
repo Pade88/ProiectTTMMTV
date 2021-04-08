@@ -15,7 +15,7 @@
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\ovidi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
             "Microsoft.Toolkit.Forms.UI.Controls.WebView": {
               "target": "Package",
               "version": "[6.1.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
