@@ -48,7 +48,7 @@ namespace ProiectEAV
                     doc.Save(@"..\..\records.xml");
 
                 }
-                else if(TYPE.Equals("JSON"))
+                else if (TYPE.Equals("JSON"))
                 {
                     var rand = new Random();
                     OP obj = new OP();
@@ -69,9 +69,35 @@ namespace ProiectEAV
                     File.WriteAllText(Path.Combine(Environment.CurrentDirectory, @"..\..\records.json"), JsonConvert.SerializeObject(ListOfOffices, Formatting.Indented));
 
                 }
+                else if (TYPE.Equals("DB"))
+                {
+                    SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-CUHAUG6\SQLEXPRESS;" +
+                        "Initial Catalog=PostOficces;Integrated Security=SSPI;");
+                    string querry = "INSERT INTO oficii_postale " +
+                        "(denumire, tip, adresa, cod_postal," +
+                        " mail) " +
+                        "values ('" + textBox1.Text +
+                        "', '" + textBox2.Text +
+                        "', '" + textBox3.Text +
+                        "', '" + textBox4.Text +
+                        "', '" + textBox5.Text + "');";
+                    SqlCommand cmd = new SqlCommand(querry, conn);
+                    conn.Open();
+                    cmd.ExecuteReader();
+                    conn.Close();
+                    cmd.Dispose();
+                    conn.Dispose();
+                    this.Close();
+                }
+
             }
             MessageBox.Show("Oficiu postal adaugat!");
             this.Close();
+        }
+
+        private void FormDBIN_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

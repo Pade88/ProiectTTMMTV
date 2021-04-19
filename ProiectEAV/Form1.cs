@@ -25,6 +25,7 @@ namespace ProiectEAV
 
         oficii_postale OPxml;
         Root OPjs;
+        DataTable dt = new DataTable();
         public void LoadData()
         {
             if(TYPE.Equals("XML"))
@@ -40,6 +41,19 @@ namespace ProiectEAV
                 string jsonString = reader.ReadToEnd();
                 OPjs = JsonConvert.DeserializeObject<Root>(jsonString);
                 reader.Close();
+            }
+            else if (TYPE.Equals("DB"))
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-CUHAUG6\SQLEXPRESS;" +
+                "Initial Catalog=PostOficces;Integrated Security=SSPI;");
+                SqlCommand cmd = new SqlCommand("SELECT * FROM oficii_postale", conn);
+                SqlDataAdapter sa = new SqlDataAdapter(cmd);
+                conn.Open();
+                sa.Fill(dt);
+                conn.Close();
+                sa.Dispose();
+                cmd.Dispose();
+                conn.Dispose();
             }
         }
 
@@ -59,6 +73,13 @@ namespace ProiectEAV
                 foreach (var oficiuPostal in OPjs.oficii_postale.OP)
                 {
                     OficiiPostale.Items.Add(oficiuPostal.denumire.ToString());
+                }
+            }
+            else if (TYPE.Equals("DB"))
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    OficiiPostale.Items.Add(Convert.ToString(dt.Rows[i]["denumire"]));
                 }
             }
         }
@@ -83,7 +104,7 @@ namespace ProiectEAV
                     }
                 }
             }
-            else if(TYPE.Equals("JSON"))
+            else if (TYPE.Equals("JSON"))
             {
                 foreach (var oficiuPostal in OPjs.oficii_postale.OP)
                 {
@@ -96,6 +117,29 @@ namespace ProiectEAV
                             ". \nAdresa acestei unitati postale este in " + oficiuPostal.adresa.ToString() +
                             ". \nCodul postal al acestei locatii este " + oficiuPostal.cod_postal.ToString() +
                             "\n Adresa de email este: " + oficiuPostal.mail.ToString();
+                        break;
+                    }
+                }
+            }
+            else if (TYPE.Equals("DB"))
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    if (OficiiPostale.Text == Convert.ToString(dt.Rows[i]["denumire"]))
+                    {
+                        if (!Convert.ToString(dt.Rows[i]["link_gm"]).Equals(""))
+                        {
+                            webView1.Navigate(Convert.ToString(dt.Rows[i]["link_gm"]));
+                        }
+                        else
+                        {
+                            String searchQuerry = "https://www.google.com/maps/search/" + OficiiPostale.Text;
+                            webView1.Navigate(searchQuerry);
+                        }
+
+                        textBoxInfo.Text = Convert.ToString(dt.Rows[i]["denumire"]) + " este un " + Convert.ToString(dt.Rows[i]["tip"])
+                            + ". \nAdresa acestei unitati postale este in " + Convert.ToString(dt.Rows[i]["adresa"]) + ". \nCodul postal al acestei locatii este " + Convert.ToString(dt.Rows[i]["cod_postal"]) +
+                            "\n Adresa de email este: " + Convert.ToString(dt.Rows[i]["mail"]);
                         break;
                     }
                 }
@@ -132,6 +176,17 @@ namespace ProiectEAV
                     }
                 }
             }
+            else if (TYPE.Equals("DB"))
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    if (OficiiPostale.Text == Convert.ToString(dt.Rows[i]["denumire"]))
+                    {
+                        webView1.Navigate(Convert.ToString(dt.Rows[i]["link_gsv"]));
+                        break;
+                    }
+                }
+            }
         }
 
         // Executia e din acest stackframe e oprita cat ShowDialog() e activa
@@ -159,6 +214,14 @@ namespace ProiectEAV
                 {
                     if (!comboBoxOrase.Items.Contains(oficiuPostal.adresa.ToString().Split(',')[0]))
                         comboBoxOrase.Items.Add(oficiuPostal.adresa.ToString().Split(',')[0]);
+                }
+            }
+            else if (TYPE.Equals("DB"))
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    if (!comboBoxOrase.Items.Contains(Convert.ToString(dt.Rows[i]["adresa"]).Split(',')[0]))
+                        comboBoxOrase.Items.Add(Convert.ToString(dt.Rows[i]["adresa"]).Split(',')[0]);
                 }
             }
         }
@@ -192,6 +255,21 @@ namespace ProiectEAV
                            + "; " + oficiuPostal.adresa.ToString()
                            + "; " + oficiuPostal.cod_postal.ToString()
                            + "; " + oficiuPostal.mail.ToString());
+                        listBoxOrase.Items.Add(" "); // @todo, de adaugat linie noua, \n nu merge
+                    }
+                }
+            }
+            else if (TYPE.Equals("DB"))
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    if (comboBoxOrase.Text == Convert.ToString(dt.Rows[i]["adresa"]).Split(',')[0])
+                    {
+                        listBoxOrase.Items.Add(Convert.ToString(dt.Rows[i]["denumire"])
+                           + "; " + Convert.ToString(dt.Rows[i]["tip"])
+                           + "; " + Convert.ToString(dt.Rows[i]["adresa"])
+                           + "; " + Convert.ToString(dt.Rows[i]["cod_postal"])
+                           + "; " + Convert.ToString(dt.Rows[i]["mail"]));
                         listBoxOrase.Items.Add(" "); // @todo, de adaugat linie noua, \n nu merge
                     }
                 }
